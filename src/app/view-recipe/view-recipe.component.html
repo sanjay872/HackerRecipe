@@ -1,0 +1,13 @@
+<div class="container">
+    <div class="row">
+        <div class="display" *ngIf="this.recipe!=null">
+            <img [src]=this.recipe.image>
+            <br>
+            <p class="card-label">{{this.recipe.label}}</p>
+            <h3 class="card-category">{{this.recipe.category}}</h3>
+            <h3>{{this.recipe.name}}</h3>
+            <p>{{this.recipe.description}}</p>
+            <h4>${{this.recipe.price}}</h4>
+        </div>
+    </div>
+</div>

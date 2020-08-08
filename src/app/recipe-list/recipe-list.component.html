@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+  <form>
+    <br><br>
+    <div class="input-group mb-3">
+      <div class="input-group-prepend">
+        <span class="input-group-text">Search</span>
+      </div>
+      <input type="text" #recipeSearch class="form-control" (input)="filterItem(recipeSearch.value)">
+    </div>
+    </form>
+      <div class="row">
+        <div class="col-sm-3" *ngFor="let recipe of recipeList">
+          <div class="card card-container">
+            <img class="card-img-top" [src]=recipe.image alt="Card image cap">
+            <div class="header card-label">{{recipe.label}}</div>
+            <div class="card-body">
+              <h5 class="card-title card-category">{{recipe.category}}</h5>
+              <h4>{{recipe.name}}</h4>
+              <p class="card-text">{{recipe.description}}</p>
+              <h4>${{recipe.price}}</h4>
+              <button class="btn btn-primary" (click)="view(recipe.id)" style="float: right;">View</button>
+            </div>
+          </div>
+        </div>
+      </div>
+</body>
+</html>

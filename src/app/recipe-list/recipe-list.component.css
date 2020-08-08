@@ -1,0 +1,28 @@
+body{
+    font-family: 'Lato', sans-serif;
+}
+.card-container
+{
+    background-color: #FAF7F2;
+    margin: 10px;
+}
+.card-label
+{
+    padding: 3px;
+    text-transform  : uppercase;
+    font-size: small;
+    background-color: red;
+    color: whitesmoke;
+    font: outline;
+    border-radius: 2px;
+}
+.card-category
+{
+    padding-top: 10px;
+    background-color: royalblue;
+    color: aliceblue;
+}
+form{
+    width: 500px;
+    margin-left: 500px;
+}
